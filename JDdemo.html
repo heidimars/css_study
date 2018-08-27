@@ -2,80 +2,186 @@
 <html>
 <head>
 	<title>京东</title>
-	<style type="text/css">
-		li:hover {background:#e0e0e0}
-		a:hover {color:red;cursor:pointer}
-		body{font-family:"Microsoft Yahei";}
-		body{font-size:13px;color:#666}
-		ul{width: 170px;}
-		li {list-style-type:none;
-			padding-right: 10px;
+	<style type="text/css">		
+		body{font-family:"Microsoft Yahei";font-size:14px;color:#666;background: rgb(240, 243, 239);}
+		a{text-decoration: none;}
+		ul{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+		.menu {
+			background: #fff;
+			width: 190px;
+			position: relative;
+			margin: 20px;
+			padding: 15px 0;
+		}
+		.menu>ul>li {
 			padding-left: 10px;
-			padding-bottom: 5px;
-			padding-top: 5px;			
+			height: 27px;
+			line-height: 27px;
+		}
+		.menu>ul>li:hover {background:#e0e0e0}
+		.menu>ul>li>a:hover {color:red;cursor:pointer}
+		.menu>ul>li:hover>.menu-x {display: block;}
+		.menu-x{
+			display: none;
+			position: absolute;
+			top: 0;
+			left: 190px;
+			background: #fff;
+			width: 500px;
+			height: 354px;
+		}
+
+		.login{
+			background: #fff;
+			height: 600px;
+			width: 200px;
+			margin: 50px 50px;
+			position:relative;
+			left:700px;
+			top: -350px;
+		}
+		.login img{
+			border-radius: 50%;
+			width: 100px;
+			height: 100px;
+			border: 5px solid#e3e1df;
+			position: absolute;
+			left: 45px;
+			top: -30px;
+		}	
+
+
+		.trolley {
+			background: #fff;
+			position: relative;
+			width: 200px;
+			left: 600px;
+			top:-380px;
+		}	
+		.trolley>li {
+			list-style: none;
+			padding: 10px 50px;
+		}
+		.trolley>li>a{color:red}
+		.trolley>li>a:hover{color:red;cursor:pointer}
+		.trolley>li:hover>.tro-x{display: block;}
+		.tro-x{
+			display: none;
+			position:absolute;
+			top: 30px;
+			left: 0px;
+			background:#fff;
+			width: 200px;
+			height: 200px;
+		}
+
+		.num {
+			color: #fff;
+			background:red;
+			position:absolute;
+			border-radius: 50%;
+			padding: 0 5px;
+			margin: -35px 130px;			
+		}	
+
 	</style>
 </head>
 <body>
 <h2 style="letter-spacing:20px;text-indent:2em;">京东</h2>
-<ul>
-	<li><a>家用电器</a></li>
+<div class="menu">
+	<ul>
+	<li>
+		<a>家用电器</a>
+		<div class="menu-x">1</div>
+	</li>
 	<li>
 		<a>手机</a>/
 		<a>运营商</a>/
 		<a>数码</a>
+		<div class="menu-x">2</div>
 	</li>
 	<li>
 		<a>电脑</a>/
 		<a>办公</a>
+		<div class="menu-x">3</div>
 	</li>
 	<li>
 		<a>家居</a>/
 		<a>家具</a>/
 		<a>家装</a>/
 		<a>厨具</a>
+		<div class="menu-x">4</div>
 	</li>
 	<li>
 		<a>男装</a>/
 		<a>女装</a>/
 		<a>童装</a>/
 		<a>内衣</a>
+		<div class="menu-x">5</div>
 	</li>
 	<li>
 		<a>美妆</a>/
 		<a>个体清洁</a>/
 		<a>宠物</a>
+		<div class="menu-x">6</div>
 	</li>
 	<li>
 		<a>女鞋</a>/
 		<a>箱包</a>/
 		<a>钟表</a>/
 		<a>珠宝</a>
+		<div class="menu-x">7</div>
 	</li>
 	<li>
 		<a>男鞋</a>/
 		<a>运动</a>/
 		<a>户外</a>		
+		<div class="menu-x">8</div>
 	</li>
 	<li>
 		<a>房产</a>/
 		<a>汽车</a>/
 		<a>汽车用品</a>
+		<div class="menu-x">9</div>
 	</li>
 	<li>
 		<a>母婴</a>/
-		<a>玩具乐器</a>		
+		<a>玩具乐器</a>	
+		<div class="menu-x">10</div>	
 	</li>
 	<li>
 		<a>食品</a>/
 		<a>酒类</a>/
 		<a>生鲜</a>/
 		<a>特产</a>
+		<div class="menu-x">11</div>
 	</li>
 	<li>
 		<a>艺术</a>/
 		<a>礼品鲜花</a>/
 		<a>农资绿植</a>
+		<div class="menu-x">12</div>
 	</li>
+</div>
+
+	<div class="trolley">
+		<li>
+			<a>我的购物车</a>			
+			<div class="tro-x">买啊</div>
+		</li>
+		<div class="num">1</div>
+	</div>
+
+	<div class="login">
+		<img src="1.jpg"/>
+	</div>
+
+
+	
 
 </ul>
 </body>
